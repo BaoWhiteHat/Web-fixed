@@ -1,0 +1,55 @@
+.list-table-format{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+}
+
+.list-add {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: black;
+    font-size: 16px;
+}
+
+.list-table-format.title{
+    background-color: #f9f9f9;
+}
+
+.list-table-format img{
+    width: 50px;
+}
+
+.Delete-btn{
+    background-color: tomato;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Delete-btn:hover{
+    background-color: #d32f2f;
+    color: white;
+    border: 1px solid bold;
+    transform: scale(1.2);
+    transition: 0.5s;
+    letter-spacing: 2%;
+    animation-delay: 1ms;
+}
+
+@media (max-width: 600px){
+    .list-table-format{
+        grid-template-columns: 1fr 3 fr 1fr;
+        gap: 15px
+    }
+
+    .list-table-format.title{
+        display: none;
+    }
+}
